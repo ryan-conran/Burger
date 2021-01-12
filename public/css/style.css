@@ -1,0 +1,9 @@
+body {
+    background-color: #ffc950;
+}
+
+.burger-item {
+    background: white;
+    height: 50px;
+    margin-bottom: 20px;
+}
