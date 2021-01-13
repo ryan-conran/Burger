@@ -12,6 +12,7 @@
                         <div class="row">
                             <div class="col-9">
                                 <div class="burger-item">{{this.burger_name}}</div>
+                                <div class="handlebars">{{this.id}}</div>
                             </div>
                             <div class="col-3">
                                 <button data-id="{{id}}" class="btn btn-primary devour">Devour it!</button>
@@ -37,11 +38,11 @@
     </div>
     <div class="row">
         <div class="col">
-            <form id="add-burger">
+            <form method= "POST" action="/api/burgers">
                 <div>
                     <textarea id="burger_name" name="burger_name"></textarea>
                 </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button id="add-burger"  type="submit" class="btn btn-primary">Submit</button>
             </form>
         </div>
     </div>
